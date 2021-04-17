@@ -14,3 +14,4 @@ $ibukota["banten"] = "serang";
 echo "<pre>";
 print_r($ibukota);
 echo "</pre>";
+?>
