@@ -9,3 +9,6 @@ $ibukota = array(
     "bali" => "Denpasar",
     "banten" => "Serang"
 );
+echo "<pre>";
+var_dump($ibukota);
+echo "</pre>";
