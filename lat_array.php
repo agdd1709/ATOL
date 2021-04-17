@@ -13,4 +13,4 @@ $ibukota["bali"] = "Denpasar";
 $ibukota["banten"] = "serang";
 echo "<pre>";
 print_r($ibukota);
-echo "</pre>"
+echo "</pre>";
