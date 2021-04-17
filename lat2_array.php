@@ -12,4 +12,3 @@ $ibukota = array(
 echo "<pre>";
 var_dump($ibukota);
 echo "</pre>";
-?>
