@@ -10,6 +10,18 @@
         td {
             text-align: right;
         }
+
+        .tengah {
+            text-align: center;
+        }
+
+        tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: silver;
+        }
     </style>
 </head>
 
@@ -22,8 +34,8 @@
                 <th>&nbsp;</th>
             </tr>
             <tr>
-                <td><input type="text" name="awal" maxlength="3" size="4"></td>
-                <td><input type="text" name="akhir" maxlength="3" size="4"></td>
+                <td><input type="text" name="awal" maxlength="3" size="4" value="<?php echo (isset($_POST["tblsubmit"]) == false ? "" : $_POST["awal"]); ?>"></td>
+                <td><input type="text" name="akhir" maxlength="3" size="4" value="<?php echo (isset($_POST["tblsubmit"]) == false ? "" : $_POST["akhir"]); ?>"></td>
                 <td><input type="submit" name="tblsubmit" maxlength="3" size="4"></td>
             </tr>
         </table>
@@ -50,7 +62,7 @@
             for ($liter = $awal; $liter <= $akhir; $liter++) {
             ?>
                 <tr>
-                    <td><?php echo $liter; ?></td>
+                    <td class="tengah"><?php echo $liter; ?></td>
                     <td>Rp <?php echo number_format($liter * HARGA_PREMIUM, 0, ",", "."); ?></td>
                     <td>Rp <?php echo number_format($liter * HARGA_PERTALITE, 0, ",", "."); ?></td>
                     <td>Rp <?php echo number_format($liter * HARGA_PERTAMAX, 0, ",", "."); ?></td>
