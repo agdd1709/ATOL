@@ -1,4 +1,5 @@
 <?php
+$data=array();
 array_push($data,5);
 array_push($data,7);
 array_push($data,90);
