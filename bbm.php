@@ -21,10 +21,33 @@
                 <td><input type="text" name="akhir" maxlength="3" size="4"></td>
                 <td><input type="submit" name="tblsubmit" maxlength="3" size="4"></td>
             </tr>
-
         </table>
     </form>
-
+    <hr>
+    <table border="1px">
+        <tr>
+            <th>Liter</th>
+            <th>Premium</th>
+            <th>Pertalite</th>
+            <th>Pertamax</th>
+            <th>Solar</th>
+        </tr>
+        <?php
+        $awal = $_POST["awal"];
+        $akhir = $_POST["akhir"];
+        for ($liter = $awal; $liter <= $akhir; $liter++) {
+        ?>
+            <tr>
+                <td>Angka Liter</td>
+                <td>Harga Premium</td>
+                <td>Harga Pertalite</td>
+                <td>Harga Pertamax</td>
+                <td>Harga Solar</td>
+            </tr>
+        <?php
+        }
+        ?>
+    </table>
 </body>
 
 </html>
