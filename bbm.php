@@ -24,6 +24,8 @@
         </table>
     </form>
     <hr>
+    <?php
+    ?>
     <table border="1px">
         <tr>
             <th>Liter</th>
