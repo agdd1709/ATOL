@@ -33,16 +33,20 @@
             <th>Solar</th>
         </tr>
         <?php
+        define("HARGA_PREMIUM", 6550);
+        define("HARGA_PERTALITE", 7600);
+        define("HARGA_PERTAMAX", 8900);
+        define("HARGA_SOLAR", 5150);
         $awal = $_POST["awal"];
         $akhir = $_POST["akhir"];
         for ($liter = $awal; $liter <= $akhir; $liter++) {
         ?>
             <tr>
-                <td>Angka Liter</td>
-                <td>Harga Premium</td>
-                <td>Harga Pertalite</td>
-                <td>Harga Pertamax</td>
-                <td>Harga Solar</td>
+                <td><?php echo $liter; ?></td>
+                <td><?php echo $liter * HARGA_PREMIUM; ?></td>
+                <td><?php echo $liter * HARGA_PERTALITE; ?></td>
+                <td><?php echo $liter * HARGA_PERTAMAX; ?></td>
+                <td><?php echo $liter * HARGA_SOLAR; ?></td>
             </tr>
         <?php
         }
