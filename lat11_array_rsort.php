@@ -5,3 +5,4 @@ sort($angka);
 print_r($angka);
 rsort($angka);
 print_r($angka);
+?>
