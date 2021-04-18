@@ -11,5 +11,8 @@ echo "Data telah di urutkan secara asort";
 echo "<pre>" . print_r($ibukota, true) . "</pre>";
 arsort($ibukota);
 echo "Data telah di urutkan secara arsort";
-echo "<pre>" . print_r($ibukota, true) . "<pre>";
+echo "<pre>" . print_r($ibukota, true) . "</pre>";
+ksort($ibukota);
+echo "Data telah di urutkan secara ksort";
+echo "<pre>" . print_r($ibukota, true) . "</pre>";
 ?>
