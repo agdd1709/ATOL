@@ -9,6 +9,10 @@ class Nilai
     //method declaration
     function getNilaiAkhir()
     {
+        return 0.2 * $this->nilaiTugas + 0.3 * $this->nilaiUTS + 0.5 * $this->nilaiUAS;
+    }
+    function getIndex()
+    {
         $na = $this->getNilaiAkhir();
         if ($na >= 80) return "A";
         else 
@@ -23,7 +27,3 @@ class Nilai
 }
 // end of class
 ?>
-<?php
-include_once("nilai.php");
-$NilaiAndi = new Nilai();
-$NilaiBudi = new Nilai();
